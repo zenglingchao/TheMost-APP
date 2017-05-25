@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background_main"
+    >
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_width="202px"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/statusBar"
+        android:orientation="vertical">
+        <!-- 标题-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:src="@drawable/setting_title"/>
+
+
+        <!-- 底部导航栏 -->
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_common"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50px"
+                android:button="@null"
+                android:background="@drawable/selector_radio_setting_common"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_system"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50px"
+                android:button="@null"
+                android:background="@drawable/selector_radio_setting_system" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!-- 占位帧布局 -->
+    <FrameLayout
+        android:id="@+id/fragmentHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/statusBar"
+        android:layout_toEndOf="@+id/list_item"
+        />
+</RelativeLayout>

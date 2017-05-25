@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">theMost</string>
+    <string name="radio_designer">Designer</string>
+    <string name="radio_discover">Thing</string>
+    <string name="radio_magazine">Magazine</string>
+    <string name="radio_mine">Mine</string>
+</resources>

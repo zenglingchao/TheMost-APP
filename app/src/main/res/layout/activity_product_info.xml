@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <!--主视图-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/imagePager"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/black" />
+
+                <com.example.ziyu.themostdemo.Weight.SmileView
+                    android:id="@+id/smileView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/product_labelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/product_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="金色流苏别针"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/product_disc"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/product_imageLayout"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <!--黑色-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:orientation="vertical">
+                <!--设计师title-->
+                <TextView
+                    android:id="@+id/designerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="设计师、作品"
+                    android:textColor="@color/colorDarkGray" />
+                <!--设计师详情-->
+                <LinearLayout
+                    android:id="@+id/designer_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/designer_avatar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/ic_mine_portrait" />
+
+                    <TextView
+                        android:id="@+id/designer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text=" hahahhha"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/designer_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text=" hahahhha"
+                        android:textColor="@color/colorGray"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/attention"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginTop="5dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:background="@drawable/attention"
+                        android:text="+关注"
+                        android:textColor="@drawable/attention_text"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/designer_disc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:lineSpacingMultiplier="1.3"
+                        android:padding="5dp" />
+
+                </LinearLayout>
+
+                <!--产品列表-->
+                <com.example.ziyu.themostdemo.Weight.MyGridView
+                    android:id="@+id/productList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:numColumns="2" />
+
+                <Button
+                    android:id="@+id/look_more"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:text="查看所有作品"
+                    android:textColor="@color/black" />
+
+                <!--评论title-->
+                <TextView
+                    android:id="@+id/commentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="评论(7)"
+                    android:textColor="@color/colorDarkGray" />
+
+                <!--评论列表-->
+                <com.example.ziyu.themostdemo.Weight.MyListView
+                    android:id="@+id/commentList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:divider="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/allComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="查看全部评论" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/black" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- 底部评论条-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/black_overlay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/ic_mine_portrait" />
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/author_gray"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="说点什么吧" />
+
+            <ImageView
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/article_comment_icon" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorRed"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="品牌官网"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+       <!--返回键-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_circle_back_normal"
+        android:onClick="backClick"
+        app:layout_behavior="com.example.ziyu.themostdemo.Util.TopBarBehavior"
+        app:layout_anchor="@+id/scrollView"
+        app:layout_anchorGravity="top|left"
+        android:layout_gravity="bottom|right" />
+
+</android.support.design.widget.CoordinatorLayout>

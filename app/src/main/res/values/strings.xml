@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TheMostDemo</string>
+    <string name="radio_magazine">画报</string>
+    <string name="radio_discover">有物</string>
+    <string name="radio_designer">设计师</string>
+    <string name="radio_mine">我的</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ZiyuLibrary</string>
+
+    <!-- TimeCountUtil 计时器-->
+    <string name="action_get_captcha_after">重新获取</string>
+
+</resources>

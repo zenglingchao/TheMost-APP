@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ziyu.themostdemo.MainActivity">
+
+    <!-- 占位帧布局 -->
+    <FrameLayout
+        android:id="@+id/fragmentHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <!-- 底部导航栏 -->
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <RadioButton
+            android:id="@+id/radio_magazine"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/selector_radio_icon_magazine"
+            android:text="@string/radio_magazine" />
+
+        <RadioButton
+            android:id="@+id/radio_discover"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/selector_radio_icon_discover"
+            android:text="@string/radio_discover" />
+
+        <RadioButton
+            android:id="@+id/radio_designer"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/selector_radio_icon_designer"
+            android:text="@string/radio_designer" />
+
+        <RadioButton
+            android:id="@+id/radio_mine"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/selector_radio_icon_mine"
+            android:text="@string/radio_mine" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_above="@+id/divider"
+        android:background="@color/colorGrayBlack">
+
+
+        <TextView
+            android:id="@+id/designer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text=" hahahhha"
+            android:textColor="@color/colorGray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/designer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/designer_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text=" hahahhha"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorGray"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/attention"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/designer_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/attention"
+            android:text="+关注"
+            android:textColor="@drawable/attention_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/designer_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_mine_portrait"
+        app:civ_border_color="@color/avatarGray"
+        app:civ_border_width="1dp"/>
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black" />
+
+</RelativeLayout>

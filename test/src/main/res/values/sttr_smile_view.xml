@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmileView">
+        <!--<item name="textSize" format="dimension"/>
+        <item name ="maxHeight" format="dimension"/>
+        <item name="textLike" format="string"/>
+        <item name="textDis" format="string"/>-->
+    </declare-styleable>
+</resources>

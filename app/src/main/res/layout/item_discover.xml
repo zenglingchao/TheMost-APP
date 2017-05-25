@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--主视图-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/item"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_above="@+id/item"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:textSize="16sp"
+            android:alpha="0.8"
+            android:background="@drawable/text_background"
+            android:text="hahaha"/>
+
+        <RelativeLayout
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/divider"
+            android:background="@color/colorGrayBlack"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/designer_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+               android:layout_centerVertical="true"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/designer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="120dp"
+                android:textColor="@color/colorGray"
+                android:layout_alignTop="@+id/designer_avatar"
+                android:layout_toRightOf="@+id/designer_avatar"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text=" hahahhha"/>
+
+            <TextView
+                android:id="@+id/designer_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:layout_toRightOf="@+id/designer_avatar"
+                android:layout_below="@+id/designer_name"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:layout_marginRight="120dp"
+                android:ellipsize="end"
+                android:text=" hahahhha"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+      <com.example.ziyu.themostdemo.Weight.SmileView
+        android:id="@+id/smileView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

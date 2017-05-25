@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#68C9D3</color>
+    <color name="colorPrimaryDark">#3ca2b3</color>-->
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary">#f1ff7a</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_button">#262626</color>
+    <color name="black_overlay">#161616</color>
+    <color name="gray_divider">#c4d7db</color>
+    <color name="gray_dark">#e8e8e8</color>
+    <color name="black_light">#b8b8b8</color>
+    <color name="gray_dividerHeight">#d5ebf0</color>
+
+</resources>

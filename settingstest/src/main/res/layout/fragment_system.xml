@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- update -->
+    <LinearLayout
+        android:id="@+id/item_update"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:gravity="center_vertical"
+        android:padding="13px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_update"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="31px"
+            android:textColor="@android:color/white"
+            android:textSize="24px"
+            android:text="系统升级"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arraw_next"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:background="#428ba3e1"/>
+    <!-- light -->
+    <LinearLayout
+        android:id="@+id/item_light"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:gravity="center_vertical"
+        android:padding="13px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_light"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="31px"
+            android:textColor="@android:color/white"
+            android:textSize="24px"
+            android:text="亮度"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arraw_next"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:background="#428ba3e1"/>
+    <!-- audio -->
+    <LinearLayout
+        android:id="@+id/item_audio"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:gravity="center_vertical"
+        android:padding="13px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_audio"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="31px"
+            android:textColor="@android:color/white"
+            android:textSize="24px"
+            android:text="音量"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arraw_next"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:background="#428ba3e1"/>
+    <!-- time -->
+    <LinearLayout
+        android:id="@+id/item_time"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:gravity="center_vertical"
+        android:padding="13px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_time"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="31px"
+            android:textColor="@android:color/white"
+            android:textSize="24px"
+            android:text="日期与时间"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18px"
+            android:textColor="#B1ffffff"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:background="#428ba3e1"/>
+    <!-- memory -->
+    <LinearLayout
+        android:id="@+id/item_memory"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:gravity="center_vertical"
+        android:padding="13px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_mermory"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="31px"
+            android:textColor="@android:color/white"
+            android:textSize="24px"
+            android:text="存储"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arraw_next"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:background="#428ba3e1"/>
+    <!-- reset -->
+    <LinearLayout
+        android:id="@+id/item_reset"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:gravity="center_vertical"
+        android:padding="13px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_reset"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="31px"
+            android:textColor="@android:color/white"
+            android:textSize="24px"
+            android:text="恢复出厂设置"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arraw_next"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:background="#428ba3e1"/>
+    <!-- about -->
+    <LinearLayout
+        android:id="@+id/item_about"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:gravity="center_vertical"
+        android:padding="13px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_about"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="31px"
+            android:textColor="@android:color/white"
+            android:textSize="24px"
+            android:text="关于设备"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arraw_next"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:background="#428ba3e1"/>
+</LinearLayout>
+</ScrollView>
